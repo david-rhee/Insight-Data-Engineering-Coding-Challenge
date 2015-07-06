@@ -12,6 +12,7 @@ More details can be found at https://github.com/InsightDataScience/cc-example
 
 This is the tree view of this repo:
 
+    |-- License.txt
     |-- README.md
     |-- run.sh
     |-- src
@@ -64,7 +65,7 @@ To calculate the median number of *unique* words per tweet, and update this medi
 
 ## Optional
 
-For big tweet.txt (~ 400 million tweets), you can split the tweet.txt into smaller files and run words_tweeted.py concurrently, and combine the results with words_tweeted_utils.py.
+For big tweet.txt, you can split the tweet.txt into smaller files and run words_tweeted.py concurrently, and combine the results with words_tweeted_utils.py.
 You can achieve this by using the Linux's split program (http://manpages.ubuntu.com/manpages/hardy/man1/avisplit.1.html).
 
 e.g.:
