@@ -74,10 +74,10 @@ e.g.:
     split -l 100000000 tweets.txt tmp_
 
     cd ../src
-    python words_tweeted.py -i ../tweet_input/tmp_aa -o ../tweet_output/tmp_ft1.txt &
-    python words_tweeted.py -i ../tweet_input/tmp_ab -o ../tweet_output/tmp_ft2.txt &
-    python words_tweeted.py -i ../tweet_input/tmp_ac -o ../tweet_output/tmp_ft3.txt &
-    python words_tweeted.py -i ../tweet_input/tmp_ad -o ../tweet_output/tmp_ft4.txt &
+    python words_tweeted.py -i ../tweet_input/tmp_aa -o ../tweet_output/tmp_ft1.txt > status_1.txt 2>&1 &
+    python words_tweeted.py -i ../tweet_input/tmp_ab -o ../tweet_output/tmp_ft2.txt > status_2.txt 2>&1 &
+    python words_tweeted.py -i ../tweet_input/tmp_ac -o ../tweet_output/tmp_ft3.txt > status_3.txt 2>&1 &
+    python words_tweeted.py -i ../tweet_input/tmp_ad -o ../tweet_output/tmp_ft4.txt > status_4.txt 2>&1 &
 
     python words_tweeted_utils.py -i ../tweet_output/tmp_ft1.txt ../tweet_output/tmp_ft2.txt ../tweet_output/tmp_ft3.txt ../tweet_output/tmp_ft4.txt -o ../tweet_output/ft1.txt
 
